@@ -1,0 +1,103 @@
+input{
+    border:none !important;
+    box-shadow: none !important;
+}
+.search_input{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    /* padding: 2px 15px; */
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    border-radius: 7px 0px 0px 7px;
+    padding-left: 8px;
+    border-right: 1px solid gray;
+}
+.search_input1{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    /* padding: 2px 15px; */
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    /* border-radius: 7px 0px 0px 7px; */
+    padding-left: 8px;
+}
+.search_item{
+    padding: 6px 13px;
+    background-color: rgb(89, 50, 234);
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    /* width: 45px; */
+    color: white;
+    /* background-color: #5932EA;
+    padding: 6px 20px;
+    border-radius: 0% 12% 12% 0% */
+}
+.icon_center{
+    display: flex;
+    align-items: center;
+
+}
+
+.all_select_menu{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+    padding: 0px 12px;
+}
+.icon_select_menu{
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    /* width: auto; */
+    background-color: white;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    border-radius: 5%;
+}
+.form-select{
+    border: none;
+   padding:  9px 20px 9px 8px;
+   background-position: right 0rem center;
+    /* border-radius: 0px; */
+    box-shadow: none !important;
+    width: auto;
+}
+
+.all_section{
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+   .all_select_menu{
+    width: 70vw;
+    overflow-x: scroll;
+   }
+}
+
+@media (max-width: 1023px){
+    .all_select_menu{
+        width: 100vw;
+        overflow-x: scroll;
+       }
+}
+
+@media screen and (min-width: 375px) and (max-width: 426px){
+    .samll_input{
+        margin-bottom: 15px;
+    }
+    .search_item{
+        padding: 6px 3px;
+      
+    }
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 376px){
+    .samll_input{
+        margin-bottom: 15px;
+    }
+    .search_item{
+        padding: 6px 1px;
+      
+    }
+
+}

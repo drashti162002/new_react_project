@@ -1,0 +1,11 @@
+/* #map table:nth-last-child(1) {
+   display: none;
+  } 
+
+#map div span:nth-last-child(1) {
+    display: none;
+} 
+
+#map div:nth-last-child() {
+    display: none;
+   }  */

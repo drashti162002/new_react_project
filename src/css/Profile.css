@@ -1,0 +1,252 @@
+.full_profile_page{
+    background-color: #d9c0da;
+    padding: 15px 15px 0px 15px;
+    min-height: calc(100vh - 57px);
+}
+.profile_row{
+    background-color: white;
+    border-radius: 8px;
+}
+.profile_back_pic{
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+    /* position: relative; */
+}
+.profile_set_name{
+    font-weight: 600;
+}
+.profile_info{
+    display: flex;
+    justify-content: space-between;
+}
+.profile_number{
+    display: flex;
+    gap: 9px 
+}
+.all_lang{
+    background-color: #c5bde3;
+    color: #5932EA;
+    text-transform: uppercase;
+    padding: 0px 2px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.all_languages{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.edit_lang{
+    background-color: #5932EA;
+    color: white !important;
+    padding: 0px 2px 3px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+/* .set_back_img{
+    position: relative;
+} */
+.set_all_class_position{
+    position: relative;
+}
+.profile_main_set_pic{
+    position: relative;
+}
+.camera_icon{
+    position: absolute;
+    background-color: #5932EA;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0px 5px 2px;
+    right: 4%;
+    bottom: 14%;
+}
+/* .profile_round_pic{
+
+} */
+.profile_pic{
+    position: relative;
+    width: 100%;
+    height: 100px
+}
+.profile_pic_main{
+    position: absolute;
+    left: 40%;
+    bottom: -12%;
+}
+.camera_icon1{
+    position: absolute;
+    background-color: #5932EA;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0px 5px 2px;
+    bottom: 6%;
+    right: 6%
+}
+.back_about_color{
+    background-color: rgb(235, 233, 233);
+    border-radius: 8px;
+    padding: 5px 8px;
+    text-align: justify;
+}
+.col_padding{
+    padding: 0px 30px;
+}
+.education_img{
+    width: 100%;
+}
+.main_eduaction_img{
+    width: 450px;
+    text-align: center;
+    
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    background: #5932EA;
+    border:none;
+}
+.nav-link {
+    color: #5932EA;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #5932EA;
+}
+.nav-tabs{
+    border-bottom: 1px solid #5932EA;
+    /* overflow-x: scroll; */
+    width: 100%;
+}
+.nav-tabs .nav-link{
+    border:none
+}
+.nav{
+    flex-wrap: nowrap;
+}
+.all_tab_part{
+    margin-top:15px;
+}
+.add_icon{
+    float: right;
+    background: #5932EA;
+    border-radius: 6px;
+    padding: 2px 4px;
+    color: white;
+}
+.nav-link:focus-visible{
+    box-shadow: none;
+}
+.imb_image{
+    width: 80%;
+}
+.ui_name{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.ibm_name{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.edit_card{
+    background: #5932EA;
+    padding: 0px 4px 5px;
+    border-radius: 8px;
+    color: white;
+
+}
+.icon_col_edit{
+    display: flex;
+    align-items: center;
+}
+.img_crad{
+    padding: 8px 0px 0px 12px
+}
+.experience_img{
+    width: 350px;
+    height: 350px;
+}
+.image_center{
+    text-align: center;
+}
+.profile_state{
+    float: right;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler{
+ border: none
+}
+.navbar-toggler{
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+}
+
+.all_nav_item{
+    display: flex;
+    gap: 40px;
+}
+.profile_pic_nav{
+    height: 32px;
+    width: 32px;
+}
+.profile_droupdwn_menu_name{
+    color: black;
+}
+/* .dropdown-menu[data-bs-popper]{
+    transform: translate(-72px, 10px);
+} */
+
+.icon-text{
+    display: flex;
+    align-items: center;
+    gap:2px
+}
+.profile_page_fix{
+  /* min-height: 100vh !important;
+  min-width: 100%; */
+  /* position: absolute; */
+}
+
+/* offcanvas css custom start */
+.offcanvas.offcanvas-start{
+   width: 250px;
+}
+.offcanvas-backdrop{
+    background-color: none;
+}
+.offcanvas-backdrop.show{
+    opacity: 0;
+}
+.modal-open{
+    padding-right: 0px !important;
+    overflow:visible !important;
+}
+@media screen and (min-width: 769px) and (max-width: 4000px){
+    .offcanvas.offcanvas-start{
+       display: none;
+     }
+}
+
+@media screen and (min-width: 2561px) and (max-width: 4000px){
+    .profile_pic{
+        height: 200px
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2560px){
+    .profile_pic{
+        height: 175px
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    .nav-link{
+        padding: 0.5rem 0.5rem;
+    }
+}
