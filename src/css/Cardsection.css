@@ -80,11 +80,13 @@
 .card_space{
     margin: 15px 0px;
     border-radius: 12px;
+    scroll-snap-align: center
 }
 
 .all_card_height{
-    max-height: calc(100vh - 197px);
+    max-height: calc(100vh - 248px);
     overflow-y: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .back_arrow_icon{
@@ -92,6 +94,7 @@
     color: white;
     padding: 5px 7px 11px 7px;
     border-radius: 6px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,.15));
 }
 .back_iocn{
     float: right;
@@ -126,6 +129,7 @@
     color: white;
     padding: 3px 5px 9px 5px;
     border-radius: 8px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,.15));
 }
 
 .report_job{
@@ -163,7 +167,7 @@
 
 .all_card_info{
     background-color: white;
-    max-height: calc(100vh - 197px);
+    max-height: calc(100vh - 248px);
     overflow-y: auto;
     overflow-x: hidden;
     left: 50%;
@@ -220,7 +224,7 @@
         display: flex;
         gap: 12px;
         position: absolute;
-        top:calc(100vh - 347px);
+        top:calc(100vh - 417px);
     }
     .all_card_info{
         position: absolute;
@@ -239,14 +243,14 @@
 
 @media (max-width:426px) {
     .all_card_height{
-        top:calc(100vh - 470px);
+        top:calc(100vh - 537px);
     }
 
 }
 
 @media (max-width:321px) {
     .all_card_height{
-        top:calc(100vh - 520px);
+        top:calc(100vh - 565px);
     }
 
 }

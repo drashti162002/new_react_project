@@ -73,85 +73,6 @@ function Profile() {
   return (
     <>
       <div className="profile_page_fix">
-        {/* navbar */}
-        {[false].map((expand) => (
-          <Navbar key={expand} expand={expand} className="bg-white shadow-sm">
-            <Container fluid>
-              <Navbar.Toggle
-                id="ttt"
-                className="toogle_value"
-                aria-controls={`offcanvasNavbar-expand-${expand}`}
-              />
-              <Navbar.Brand>
-                <div className="all_nav_item">
-                  <NavDropdown
-                    title={
-                      <span className="profile_droupdwn_menu_name">
-                        <img
-                          src={profile_pic}
-                          className="profile_pic_nav"
-                        ></img>{" "}
-                        David Greymaax{" "}
-                        <span>
-                          <MdKeyboardArrowDown />
-                        </span>
-                      </span>
-                    }
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    className="back_name_color"
-                  >
-                    <NavDropdown.Item
-                      className="item_menu_color"
-                      href="#action3"
-                    >
-                      Action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      className="item_menu_color"
-                      href="#action4"
-                    >
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item
-                      className="item_menu_color"
-                      href="#action5"
-                    >
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                  <span>
-                    <VscBellDot />
-                  </span>
-
-                  <span>
-                    <FaPowerOff />
-                  </span>
-                </div>
-              </Navbar.Brand>
-              <Navbar.Offcanvas
-                id={`offcanvasNavbar-expand-${expand}`}
-                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-                placement="start"
-              >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    <img src={logo} alt="logo" className="logo_image"></img>
-                  </Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                  {menuItem.map((item, index) => (
-                    <NavLink to={item.path} key={index} className="link">
-                      <div className="icon">{item.icon}</div>
-                      <div className="link_text">{item.name}</div>
-                    </NavLink>
-                  ))}
-                </Offcanvas.Body>
-              </Navbar.Offcanvas>
-            </Container>
-          </Navbar>
-        ))}
-
         <div className="full_profile_page">
           <div>
             <Row className="m-0 profile_row">
@@ -184,10 +105,10 @@ function Profile() {
                 </div>
 
                 <Row>
-                  <Col md={6} sm={12} className="col_padding">
+                  <Col xl={6} md={12} sm={12} className="col_padding">
                     <h3>Kristin W.</h3>
                   </Col>
-                  <Col md={6} sm={12} className="col_padding">
+                  <Col xl={6} md={12} sm={12} className="col_padding">
                     <h5 className="profile_state">
                       New York, United States{" "}
                       <span className="edit_lang">
@@ -250,7 +171,7 @@ function Profile() {
                     id="controlled-tab-example"
                     activeKey={key}
                     onSelect={(k) => setKey(k)}
-                    className="mb-3"
+                    className="mb-3 small_screen_nav_space"
                   >
                     <Tab
                       eventKey="experience"
@@ -353,9 +274,12 @@ function Profile() {
                         </span>
                       }
                     >
+                       <Col lg={12} md={12} sm={12}>
                       <span className="add_icon">
                         <RiAddFill />
                       </span>
+                       </Col>
+                      <div className="image_lap_col">                    
                       <div className="main_eduaction_img">
                         <img
                           src={education_img}
@@ -363,9 +287,11 @@ function Profile() {
                           className="education_img"
                         ></img>
                       </div>
+                   
                       <p className="text-center">
                         Please add educations details
                       </p>
+                    </div>
                     </Tab>
                     <Tab
                       eventKey="resume"

@@ -2,10 +2,10 @@
 *{
   text-decoration: none !important;
 }
-.all_rout_page{
+/* .all_rout_page{
   position: absolute;
   top:0px;
-}
+} */
 .item_menu_color:hover{
   background-color: #ebeded !important;
 }

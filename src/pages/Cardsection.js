@@ -91,18 +91,18 @@ function Cardsection(){
                     <div className='all_card_height'>                   
                     {
                         cardItem.map((item, index)=>(
-                            <Col lg={12} md={12}  xs={12}>                          
+                            <Col lg={12} md={12} sm={12} xs={12}>                          
                             <Card className='card_space shadow-lg'>
                             <Card.Body>
                                 <Row>                           
-                                    <Col lg={11} md={11} xs={11} onClick={handleOpenMenu}>
+                                    <Col lg={11} md={11} sm={11} xs={10} onClick={handleOpenMenu}>
                                         <div >
                                             <p className='card_subtitle'>{item.subtitle}</p>
                                             {/* <p className='card_name'>{item.name}</p> */}
                                         </div>
                                     </Col>
 
-                                    <Col lg={1} md={1} xs={1}>
+                                    <Col lg={1} md={1} sm={1} xs={2}>
 
                                         <div className='more_icon'>
                                         <Dropdown>

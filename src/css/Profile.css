@@ -1,7 +1,7 @@
 .full_profile_page{
     background-color: #d9c0da;
     padding: 15px 15px 0px 15px;
-    min-height: calc(100vh - 57px);
+    min-height: calc(100vh - 50px);
 }
 .profile_row{
     background-color: white;
@@ -83,7 +83,7 @@
     background-color: #5932EA;
     color: white;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 20px;
     padding: 0px 5px 2px;
     bottom: 6%;
     right: 6%
@@ -210,7 +210,7 @@
 .profile_page_fix{
   /* min-height: 100vh !important;
   min-width: 100%; */
-  /* position: absolute; */
+  position: absolute;
 }
 
 /* offcanvas css custom start */
@@ -226,6 +226,11 @@
 .modal-open{
     padding-right: 0px !important;
     overflow:visible !important;
+}
+.image_lap_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 @media screen and (min-width: 769px) and (max-width: 4000px){
     .offcanvas.offcanvas-start{
@@ -244,9 +249,34 @@
         height: 175px
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px){
 
-    .nav-link{
-        padding: 0.5rem 0.5rem;
+
+@media screen and (min-width: 280px) and (max-width: 1024px){
+    .profile_state{
+        float: left;
     }
 }
+/* new class add in tab link */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    /* .nav-link{
+        padding: 0.5rem 0.5rem;
+    } */
+    .small_screen_nav_space.nav{
+        --bs-nav-link-padding-x:0.5rem !important;
+    }
+    /* .imb_image {
+        width: 125%;
+    }
+    .img_crad {
+        padding: 8px 0px 0px 0px;
+    } */
+
+}
+
+/* @media screen and (min-width: 1441px) and (max-width: 4000px){
+   .camera_icon1{
+    font-size: 40px;
+    line-height: 1;
+   }
+
+} */
